@@ -109,6 +109,7 @@ resource "aws_rds_cluster" "app7-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "ebc2ac20-23a3-4518-a7ef-3a102b003ab6"
   }
+  copy_tags_to_snapshot = true
 }
 
 resource "aws_rds_cluster" "app8-rds-cluster" {
